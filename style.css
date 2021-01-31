@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+/* Versione con vh */
+/* #wrapper {
+  width: 100%;
+  height: 100vh;
+} */
+#wrapper:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.player {
+    width: 70%;
+    height: 100%;
+    float: left;
+    background: red;
+}
+
+.player-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.ytimg.com/vi/roS6oFjCDhc/maxresdefault.jpg');
+    background-size: cover;
+}
+
+.player-image .player-image-layover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 5px solid red;
+}
+
+.player-image .player-image-layover img {
+    max-height: 100%;
+}
+
+/* suggestions */
+.suggestions {
+    width: 30%;
+    height: 100%;
+    float: right;
+    background: white;
+}
+
+.suggestions .suggestions-item {
+    padding: 5px;
+}
+
+.suggestions .suggestions-item:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.suggestions .suggestions-item img {
+    height: 50px;
+    float: left;
+}
+
+/* Versione con vh */
+/* .suggestions .suggestions-item img {
+  height: 20vh;
+} */
+.suggestions .suggestions-item .caption {
+    display: inline-block;
+    height: 100%;
+    padding: 5px;
+}
